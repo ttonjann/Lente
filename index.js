@@ -8,7 +8,7 @@ imgClick.addEventListener("click", () => {
     
     const linker = document.getElementById("linker").src.split("/").pop();
     const lente = imgArr[0].split("/").pop()
-    if (linker == lente) {
+    if (linker === lente) {
         document.getElementById("rechter").src = ("./lammetjes.jpeg");
         document.getElementById("linker").src = imgArr[++counter];
         if(counter === 4) {
